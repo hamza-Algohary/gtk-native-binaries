@@ -1,1 +1,4 @@
-gtk-native.jar
+*.jar
+*.java
+lib
+msys.py
