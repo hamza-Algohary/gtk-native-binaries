@@ -1,3 +1,5 @@
+jdk:
+  - openjdk11
 before_install:
    - make build
 install:
