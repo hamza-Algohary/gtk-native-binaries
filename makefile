@@ -6,3 +6,5 @@ init:
 	-rm msys.py
 	wget https://raw.githubusercontent.com/hamza-Algohary/msyslinux/main/msys.py
 
+install:
+	mvn install:install-file -Dfile=lib/gtk_native.jar -DgroupId="io.github.hamza-Algohary" -DartifactId=gtk_native -Dversion=0.1.0 -Dpackaging=jar -DgeneratePom=true
