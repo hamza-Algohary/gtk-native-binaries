@@ -1,6 +1,7 @@
 jdk:
    - openjdk11
 before_install:
+   - make init
    - chmod +x install.sh
    - ./install.sh
 install:
