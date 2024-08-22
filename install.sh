@@ -2,6 +2,7 @@
 wget https://www.python.org/ftp/python/3.12.5/Python-3.12.5.tgz
 tar xzf Python-3.12.5.tgz
 cd Python-3.12.5
+mkdir -p /tmp/python/3.12.5
 ./configure --prefix=/tmp/python/3.12.5/ --enable-optimizations --with-lto --with-computed-gotos --with-system-ffi
 make -j "$(nproc)"
 make altinstall
