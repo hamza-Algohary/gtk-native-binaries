@@ -5,3 +5,10 @@ build:
 init:
 	-rm msys.py
 	wget https://raw.githubusercontent.com/hamza-Algohary/msyslinux/main/msys.py
+
+release:
+	zip -r gtk4-dlls.zip lib
+	gh release create v0.1 -d gtk4-dlls.zip
+	rm *.zip
+clean:
+	rm -rf lib *.zip *.py
