@@ -1,8 +1,0 @@
-jdk:
-   - openjdk11
-before_install:
-   - make init
-   - chmod +x install.sh
-   - ./install.sh
-install:
-   - mvn install:install-file -Dfile=lib/gtk_native.jar -DgroupId=$GROUP -DartifactId=$ARTIFACT -Dversion=$VERSION -Dpackaging=jar -DgeneratePom=true
